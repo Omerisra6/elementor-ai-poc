@@ -1,0 +1,9 @@
+{
+  "core": null,
+  "plugins": [ "/Users/omeri/Dev/private/elementor-ai/elementor" ],
+  "config": {
+    "ELEMENTOR_SHOW_HIDDEN_EXPERIMENTS": true,
+    "SCRIPT_DEBUG": true,
+    "WP_DEBUG": true
+  }
+}

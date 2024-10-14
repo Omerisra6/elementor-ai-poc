@@ -1,5 +1,5 @@
-import {instructions} from "./assets/instructions/instructions-layout-focused.mjs";
-import {atomicSchema} from "./assets/schemas/atomic-schema-09-12.mjs";
+import {instructions} from "./assets/instructions/generic-instructions.mjs";
+import {atomicSchema} from "./assets/schemas/atomic-schema-09-23.mjs";
 
 export const generateAtomicSchema = async ( { userMessage, openai } ) => {
 	return await openai.beta.chat.completions.parse({
