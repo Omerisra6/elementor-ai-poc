@@ -15,7 +15,11 @@ const openai = new OpenAI({
 	apiKey: process.env.OPEN_AI_KEY,
 });
 
-const records = await fs.readFile("./assets/prompts.tsv", "utf8");
+const isFull = process.argv.includes( 'full' );
+
+const promptsPath = isFull ? "./assets/full-prompts.tsv" : "./assets/single-prompt.tsv";
+
+const records = await fs.readFile(promptsPath, "utf8");
 
 const prompts = formatTestPrompts( records );
 

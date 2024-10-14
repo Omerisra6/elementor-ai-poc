@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "single": "node index.mjs",
+    "full": "node index.mjs full"
   },
   "keywords": [],
   "author": "",
